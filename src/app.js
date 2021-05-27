@@ -4,6 +4,8 @@ const log = console.log
 const hbs = require('hbs')
 const { clearScreenDown } = require('readline')
 const app = express()
+const port = process.env.PORT || 3000
+
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
@@ -87,7 +89,7 @@ app.get('*',(req,res) => {
     })
 })
 
-app.listen(3000, () => {
-    log('Server is up on port 3000')
+app.listen(port, () => {
+    log('Server is up on port: '+port)
 })
 
