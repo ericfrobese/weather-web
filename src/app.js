@@ -37,7 +37,7 @@ app.get("/about", (req,res) =>{
 app.get("/help", (req,res) =>{
     res.render('help',{
         title: 'Help Page',
-        msg: 'In the event of Godzilla attack detach laptop and exit the area with you laptop in tow.',
+        msg: 'Just enter a zip-code or city name into the search window.',
         name: 'Eric Frobese'
     })
 })
